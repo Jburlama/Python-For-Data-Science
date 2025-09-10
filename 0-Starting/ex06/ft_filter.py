@@ -6,14 +6,16 @@ is true. If function is None, return the items that are true."""
 
     def __init__(self, function, iterable):
         self.function = function
-        self.iterable = iter(iterable)
-
-        if (function):
-            self.iterable = iter([i for i in self.iterable if function(i)])
+        self.iter = iter(iterable)
 
     def __iter__(self):
         """Makes the class a iterable object"""
-        return self.iterable
+        return self
+
+    def __next__(self):
+        if (self.function):
+            self.iter = iter([i for i in self.iter if self.function(i)])
+        return next(self.iter)
 
     def __repr__(self):
         """Change the description of the class"""

@@ -3,6 +3,9 @@ import sys
 
 
 def main():
+    """a program that accepts two arguments: a string (S) and an integer (N).
+The program should output a list of words from S that have a length greater
+than N."""
     try:
         if len(sys.argv) != 3:
             raise AssertionError("the arguments are bad")
@@ -18,7 +21,7 @@ def main():
             raise AssertionError("the arguments are bad")
 
         filter_word = ft_filter(lambda word: len(word) > lenght, words)
-        filter_words_list = list(filter_word)
+        filter_words_list = [w for w in filter_word]
         print(filter_words_list)
 
     except AssertionError as e:
