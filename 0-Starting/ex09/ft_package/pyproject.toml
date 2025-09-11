@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+description = "ft_package"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Jburlama", email = "jhonas.burlamaqui@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "MIT",
+    "Programming Language :: Python :: 3",
+]
+dependencies = []  # List dependencies here
+
+[project.urls]
+Homepage = "https://github.com/jburlama"
