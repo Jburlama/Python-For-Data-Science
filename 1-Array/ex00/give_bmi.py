@@ -5,6 +5,8 @@ def give_bmi(height: list[int | float],
 of BMI values."""
 
     try:
+        if type(height).__name__ != "list" or type(weight).__name__ != "list":
+            raise AssertionError("Arguments must be lists")
         if len(height) != len(weight):
             raise AssertionError("Lists must be the same size")
 
