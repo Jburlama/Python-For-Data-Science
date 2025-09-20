@@ -4,6 +4,7 @@ import pandas as pd
 def load(path: str) -> pd.core.frame.DataFrame:
     """takes a path as argument, writes the dimensions of the data set
     and returns it"""
+
     try:
         df = pd.read_csv(path)
 
