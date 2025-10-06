@@ -2,26 +2,22 @@ from abc import ABC, abstractmethod
 
 
 class Character(ABC):
-    """Doc string for abstract class"""
-    def __init__(self, first_name: str, is_alive=True):
-        self.first_name = first_name
-        self.is_alive = is_alive
-
-    def __dic__(self):
-        return {"first_name": self.first_name, "is_alive": self.is_alive}
-
+    """Abstract class takes a first_name and a optional is_alive value"""
     @abstractmethod
-    def die(self):
-        pass
+    def __init__(self, first_name: str, is_alive: bool = True):
+        self.is_alive: bool = is_alive
+        self.first_name: str = first_name
+
 
 
 class Stark(Character):
-    """Doc string for inherit class"""
-
-    def __init__(self, first_name: str, is_alive=True):
-        """Doc string for constructor"""
+    """docstring for class"""
+    def __init__(self, first_name: str, is_alive: bool = True):
+        """docstring for constroctor"""
+        self.first_name = first_name
         super().__init__(first_name, is_alive)
 
+
     def die(self):
-        """turn is_alive from true to false"""
+        """docstring for method"""
         self.is_alive = False

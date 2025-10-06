@@ -12,4 +12,20 @@ print("---")
 Lyanna = Stark("Lyanna", False)
 print(Lyanna.__dict__)
 
+# $> python tester.py
+# {'first_name': 'Ned', 'is_alive': True}
+# True
+# False
+# Your docstring for Class
+# Your docstring for Constructor
+# Your docstring for Method
+# ---
+# {'first_name': 'Lyanna', 'is_alive': False}
+# $>
+
+
+
 # hodor = Character("hodor")
+
+# $> python tester.py
+# TypeError: Can't instantiate abstract class Character with abstract method __init__
