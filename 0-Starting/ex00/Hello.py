@@ -1,4 +1,4 @@
-ft_list = ["Hello", "tata!"]  # Ordered, mutable and indexable
+ft_list = ["Hello", "tata!"]  # Orderd, mutable and indexable
 ft_tuple = ("Hello", "toto!") # Orderd, imutable and indexable
 ft_set = {"Hello", "tutu!"}   # Unordered, mutable and unique
 ft_dict = {"Hello" : "titi!"} # Unordered, mutable, and key-value-pair
