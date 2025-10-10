@@ -1,4 +1,7 @@
 def ft_statistics(*args: any, **kwargs: any) -> None:
+    """statistic function that given a tuple of numbers, can print
+        the mean, the median, the quartile, thd standar deviation and the
+        variance"""
     stats = {
         "mean": 0,
         "median": None,
