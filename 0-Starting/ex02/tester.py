@@ -13,3 +13,4 @@ all_thing_is_obj("Brian")
 all_thing_is_obj("Toto")
 
 print(all_thing_is_obj(10))
+
