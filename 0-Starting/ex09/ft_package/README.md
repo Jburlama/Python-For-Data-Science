@@ -3,13 +3,13 @@ My personal Python Package
 ## Create a Python virtual enviroment
 
 ```bash
-python3 -m venv vevn
+python3 -m venv venv
 ```
 
 #### Enter
 
 ```bash
-source source venv/bin/activate
+source venv/bin/activate
 ```
 
 - To leave run

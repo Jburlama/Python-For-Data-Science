@@ -1,6 +1,7 @@
 LICENSE
 README.md
 pyproject.toml
+setup.cfg
 src/ft_package/__init__.py
 src/ft_package/count_in_list.py
 src/ft_package.egg-info/PKG-INFO

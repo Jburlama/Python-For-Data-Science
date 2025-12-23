@@ -1,34 +1,59 @@
 Metadata-Version: 2.4
 Name: ft_package
 Version: 0.0.1
-Summary: ft_package
-Author-email: Jburlama <jhonas.burlamaqui@gmail.com>
-License: Copyright (c) 2018 The Python Packaging Authority
-        
-        Permission is hereby granted, free of charge, to any person obtaining a copy
-        of this software and associated documentation files (the "Software"), to deal
-        in the Software without restriction, including without limitation the rights
-        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-        copies of the Software, and to permit persons to whom the Software is
-        furnished to do so, subject to the following conditions:
-        
-        The above copyright notice and this permission notice shall be included in all
-        copies or substantial portions of the Software.
-        
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-        SOFTWARE.
-        
-Project-URL: Homepage, https://github.com/jburlama
-Classifier: MIT
-Classifier: Programming Language :: Python :: 3
-Requires-Python: >=3.9
+Summary: A sample test package
+Home-page: https://github.com/jburlama/ft_package
+Author: jburlama
+Author-email: jburlama@42.fr.rio
+License: MIT
+Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Dynamic: license-file
 
 My personal Python Package
+
+## Create a Python virtual enviroment
+
+```bash
+python3 -m venv venv
+```
+
+#### Enter
+
+```bash
+source venv/bin/activate
+```
+
+- To leave run
+```bash
+deactivate
+```
+
+### intall build
+
+```bash
+pip install build
+```
+
+#### In the same dir of .toml
+
+```bash
+python3 -m build
+```
+
+This will create a dist folder with:
+ft_package-0.0.1-py3-none-any.whl and ft_package-0.0.1.tar.gz
+
+You can install the package from any one of those.
+
+### Install ft_package
+
+```bash
+pip install /dist/ft_package-0.0.1-py3-none-any.whl
+or 
+pip install /dist/ft_package-0.0.1.tar.gz
+```
+
+
+Run the test
