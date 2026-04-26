@@ -1,3 +1,26 @@
+"""
+A função `filter()` é uma função de ordem integrada que retorna um
+iterador a partir de elementos de um iterável para os quais uma
+função retorna `true`.
+
+```
+numbers = [1, 2, 3, 4, 5, 6]
+
+def is_even(n):
+    return n % 2 == 0
+
+even_numbers = list(filter(is_even, numbers))
+print(even_numbers)  # Output: [2, 4, 6]
+```
+
+Os iteradores são objetos que permitem percorrer todos os elementos de uma
+coleção, independente de sua implementação específica.
+
+Os iteradores são objetos que implementam o protocolo de iteradores.
+contem os métodos __iter__()  e __next__().
+"""
+
+
 class ft_filter:
     """ft_filter(function or None, iterable) --> filter object
 

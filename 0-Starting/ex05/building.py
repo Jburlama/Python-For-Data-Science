@@ -89,4 +89,12 @@ def main():
 
 
 if __name__ == "__main__":
+    """
+     __name__ é uma variável especial em embutida em python que armazena o nome
+     do módulo atual.
+     - Quando um arquivo é executado diretamente __name__ é definido como
+        "__main__".
+     - Quando  um arquivo é importado como módulo, __name__ recebe o nome
+        do arquivo sem .py.
+    """
     main()
