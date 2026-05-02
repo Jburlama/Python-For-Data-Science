@@ -12,6 +12,7 @@ def main():
         slice_arr = img_arr[:400, :400, :1]
         print("The shape after slicing is:", slice_arr.shape, end="")
 
+        # removes single-dimensional entries (dimensions of size 1)
         squeeze_arr = slice_arr.squeeze()
         print(" or", squeeze_arr.shape)
 
