@@ -1,3 +1,7 @@
+"""
+Pillow (PIL) is the standard Python library for opening, manipulating, and
+saving images.
+    """
 from PIL import Image
 import numpy as np
 
