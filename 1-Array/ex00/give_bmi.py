@@ -1,3 +1,8 @@
+"""
+bmi estimates a persons body fat based on height and weight
+"""
+
+
 def give_bmi(height: list[int | float],
              weight: list[int | float]) -> list[int | float]:
     """Body Mass Index =  weight (kg) / height (m²)
@@ -10,6 +15,17 @@ of BMI values."""
         if len(height) != len(weight):
             raise AssertionError("Lists must be the same size")
 
+        """
+the zip function allows you to combine multiple iterables element by element:
+```
+    names = ['Alice', 'Bob', 'Charlie']
+    ages = [25, 30, 35]
+
+    zipped_data = zip(names, ages)
+    print(list(zipped_data))
+```
+    [('Alice', 25), ('Bob', 30), ('Charlie', 35)]
+        """
         return [w / (h*h) for w, h in zip(weight, height)]
 
     except TypeError:
