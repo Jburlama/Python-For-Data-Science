@@ -1,3 +1,7 @@
+"""
+NumPy(Numerical Python) library for high-performance scientific computing in
+Python.
+                    """
 import numpy as np
 
 
@@ -10,6 +14,11 @@ def slice_me(family: list, start: int, end: int) -> list:
         if type(end).__name__ != "int":
             raise AssertionError("end parameter must be a int")
 
+        # create a np array
+        # slicing:
+        #   start: inclusive
+        #   end: exclusive
+        #   negative: reversal
         arr = np.array(family)
         print("My shape is :", arr.shape)
         new_arr = arr[start:end]
