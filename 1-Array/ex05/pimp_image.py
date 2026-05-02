@@ -5,6 +5,8 @@ def ft_invert(array):
     """Inverts the color of the image received."""
     result = array.copy()
 
+    # Subtracting every pixel from 255 flips the values. For example, a 0
+    # becomes 255, and a 255 becomes 0.
     result = 255 - result
 
     img = Image.fromarray(result)
