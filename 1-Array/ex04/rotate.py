@@ -4,7 +4,12 @@ import numpy as np
 
 
 def transpose(img_arr: np.ndarray):
+    """
+    Transposing a 2D array means swapping its rows and columns
+        """
     height, width = img_arr.shape
+    # creates a new array filled with zeros with width and height reversed
+    # dtype forces the array to use the same type data then img_arr
     transpose_arr = np.zeros((width, height), dtype=img_arr.dtype)
 
     for y in range(height):
