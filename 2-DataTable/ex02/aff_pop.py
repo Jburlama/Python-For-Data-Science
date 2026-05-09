@@ -12,7 +12,6 @@ def millions_formatter(x, pos):
 def main():
     """loads the file population_total.csv, and displays the country
     information of Portugal versus Brazil"""
-    plt.style.use("default")
     df = load("population_total.csv")
 
     for i, country in enumerate(df["country"]):
