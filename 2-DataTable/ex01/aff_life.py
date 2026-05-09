@@ -1,18 +1,26 @@
 from load_csv import load
+"""matplotlib.pyplot it provides a collection of functions that allow you to
+create, customize, and
+display data visualizations."""
 import matplotlib.pyplot as plt
 
 
 def main():
-    plt.style.use("default")
     df = load("life_expectancy_years.csv")
 
     for i, country in enumerate(df["country"]):
-        if country == "Portugal":
+        if country == "Brazil":
             index = i
 
+    """
+    .plot() generate a standard line chart of the data frame numbers
+    pandas internaly call matplotlib for it
+        """
     ax = df.loc[index][1:].plot()
 
-    ax.set_title("Portugal Life Expectancy Projections")
+    print(ax)
+
+    ax.set_title("Brasil Life Expectancy Projections")
     ax.set_xlabel("Years")
     ax.set_ylabel("Life Expectancy")
 
