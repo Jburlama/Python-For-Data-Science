@@ -2,11 +2,11 @@ from S1E7 import Baratheon, Lannister
 
 
 class King(Baratheon, Lannister):
-    """Grand Child class, python uses the C3 linearization algorithm
-    to aviod the diamond problem"""
+    """Numa classe neto, python usa o algoritimo de linearização C3 para
+    evitar o problema de diamante"""
     def __init__(self, first_name: str, is_alive: bool = True):
-        """If both Baratheon and Lannister share a property
-        the most left will take precedence"""
+        """Se ambos Baretheon e Lannister compartilham uma propriedade, o
+        mais a esquerda vai ter precedencia"""
         super().__init__(first_name, is_alive)
 
     def set_eyes(self, color: str):
