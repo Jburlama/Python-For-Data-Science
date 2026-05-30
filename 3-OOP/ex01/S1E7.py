@@ -12,6 +12,8 @@ class Baratheon(Character):
 
     @property
     def __str__(self):
+        """O decorador @property Extende o comportamento do metodo para que
+        ele possa ser instanciado como uma variavel"""
         return f"""\
 <bound method Baratheon.__str__ of Vector:\
 ('{self.family_name}', '{self.eyes}', '{self.hairs}')"""
@@ -27,6 +29,8 @@ class Baratheon(Character):
 
     @staticmethod
     def create_baratheon(first_name: str, is_alive: bool = True):
+        """O decorador @staticmethod faz com que o metodo pode ser chamado
+        sem precisar de instanciar a classe"""
         return Lannister(first_name, is_alive)
 
 
