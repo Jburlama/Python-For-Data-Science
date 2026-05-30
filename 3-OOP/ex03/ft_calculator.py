@@ -1,5 +1,6 @@
 class calculator:
-    """Vector calculator"""
+    """A classe faz overload dos metodos especiais para costumizar o
+    comportamento dos operadores"""
     def __init__(self, vec: list[float]):
         """Inicialize by taking a list of floats"""
         self.vec = vec
