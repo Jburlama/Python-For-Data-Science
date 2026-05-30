@@ -1,4 +1,4 @@
-from S1E9 import Character, Stark
+from S1E9 import Stark
 
 Ned = Stark("Ned")
 print(Ned.__dict__)
@@ -22,10 +22,3 @@ print(Lyanna.__dict__)
 # ---
 # {'first_name': 'Lyanna', 'is_alive': False}
 # $>
-
-
-
-# hodor = Character("hodor")
-
-# $> python tester.py
-# TypeError: Can't instantiate abstract class Character with abstract method __init__
