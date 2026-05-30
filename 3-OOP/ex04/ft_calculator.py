@@ -4,7 +4,7 @@ class calculator:
 
     @staticmethod
     def dotproduct(V1: list[float], V2: list[float]) -> None:
-        """Calculates the dot product of two vectors"""
+        """o produto escalar calcular a similaridade entre dois vetores"""
         v = [i * j for i, j in zip(V1, V2)]
 
         dot = 0
